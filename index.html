@@ -20,38 +20,78 @@
 </head>
 
 <body>
+    <h1 class="celestial">Iniciando o estudo Dom</h1>
+    <p class="celestial"> Deus esta comigo!</p>
+    <p name="emanuel"> Aprendendo a usar o <strong> Dom </strong> em JavaScript.</p>
+    <div id="jesus" name="emanuel" class="celestial"> Espera em Deus </div>
 
-    <h1>Olá, Mundo!</h1>
-    <p> Deus esta comigo!</p>
     <script>
 
-        /*var nome = window.prompt(`Qual é o seu nome`);
+        var selecaoDivPorMarca = window.document.getElementsByTagName('div')[0]
+        selecaoDivPorMarca.style.background = 'green';
+
+        var selecaoDivPorId = window.document.getElementById('jesus')// usando por Id
+        selecaoDivPorId.style.color = 'yellow';
+
+        var selecaoPorNome = window.document.getElementsByName('emanuel')[1]
+        selecaoPorNome.innerText = 'Jeova'
+
+        var selecaoPorClass = window.document.getElementsByClassName('celestial')[2]
+        selecaoPorClass.style.textDecoration = 'underline'
+
+        var selecaoPorSelectorId = window.document.querySelector('#jesus');
+        selecaoPorSelectorId.innerText += ' concatenando';
+
+
+        var selecaoPorSelectorClass = window.document.querySelector('div.celestial');
+        selecaoPorSelectorClass.innerText += ' hozana'
+
+        //window.document.write('Deus é fiel: ' + p1.innerText)
+        //window.alert(p1.innerText)
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        /*
+        var p1 = window.document.getElementsByTagName('p')[1]// usando por marca
+        var corpo = document.body
+        window.document.write('Deus é fiel: ' + p1.innerText)
+        window.alert(p1.innerText)
+        corpo.style.background = 'blue'
+        p1.style.color = 'blue'
+        */
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        /*
+        const nome = 'Gama Academy';
+        console.log(nome.padStart(13));
+        console.log(nome.padStart(2));
+        */
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        /*
+        var nome = window.prompt(`Qual é o seu nome`);
         document.write(`Olá, <strong>${nome}</strong>! seu nome tem ${nome.length} letras.<br/>`);
         document.write(`seu nome em maiusculas é ${nome.toUpperCase()}<br/>`);
         document.write(`seu nome em minusculas é ${nome.toLowerCase()}`);
-
-        //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        */
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         /*
         var n1 = Number(window.prompt('digite um numero'));
         var n2 = Number(window.prompt('digite outro numero'));
         var s = n1 + n2
         window.alert(`a soma entre ${n1} e ${n2} é igual a ${s}`);
         */
-        //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         /*
         var n1 = Number(window.prompt('digite um numero'));//Number faz a operacao direta
         var n2 = Number(window.prompt('digite outro numero'));
         var s = n1 + n2
         window.alert('a soma dos valores é ' + s);
         */
-        //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx    
-        //var n1 = Number.parseInt(window.prompt('digite um numero'));//string so para numero inteiro. 
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        //var n1 = Number.parseInt(window.prompt('digite um numero'));//string so para numero inteiro.
         // var n2 = Number.parseInt(window.prompt('digite outro numero'));//string posso colocar "parsefloat"
         // var s = n1 + n2
         // window.alert('a soma dos valores é ' + s); //concatenaçao
         //(numero + numero) para adicao
         //(string + string) para concatenaçao
-        //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
         //var nome = window.prompt("qual é o seu nome");
         //window.alert('É um grande prazer em te conhecer, ' + nome + '!');//concatenaçao
     </script>
